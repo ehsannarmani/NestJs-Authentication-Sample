@@ -24,7 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+A NestJS sample for user authentication with jwt and typeorm database.
 
 ## Installation
 
