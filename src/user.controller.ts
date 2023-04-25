@@ -53,4 +53,10 @@ export class UserController {
     const jwt = this.jwtService.sign({id: user.id})
     return { status:true, message: "You logged in",token: jwt }
   }
+
+  @Get("user")
+  @UseGuards(AuthGuard)
+  user(@Req() request:Request){
+    return request['user']
+  }
 }
